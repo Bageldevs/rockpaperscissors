@@ -1,5 +1,5 @@
 import random
-print("rock, paper scissors")
+print("rock, paper, or scissors")
 
 def rockpaperscissors():
     if input() == "rock":
