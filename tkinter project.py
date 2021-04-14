@@ -3,7 +3,7 @@ import random
 root = Tk()
 root.title('Rock Paper Scissors!')
 root.configure(bg='grey')
-root.geometry("600x470+480+150")
+root.geometry("700x470+480+150")
 frame = Frame(root)
 frame.pack()
 rightFrame = Frame(root)
@@ -39,14 +39,13 @@ def calculationforscissors():
         text.insert(INSERT, "     Paper, Nooo I lost!     ")
     else:
         text.insert(INSERT, "     Scissors, Draw!     ")
-
 B = Button(leftFrame, text ="rock", fg="red", command=calculationforrock)
 C = Button(root, text="paper", fg="green", command=calculationforpaper)
 D = Button(rightFrame, text="scissors", fg="blue", command=calculationforscissors)
 E = Button(root, text="Quit", command=root.destroy)
 
-B.pack()
+B.pack(side=BOTTOM)
 C.pack()
-D.pack()
+D.pack(side=BOTTOM)
 E.pack(side=BOTTOM)
 root.mainloop()
